@@ -59,7 +59,7 @@ class Main {
         scan.nextLine();
         System.out.println("Podaj datę urodzenia DD-MM-YYYY");
         var date = scan.nextLine();
-      if(!date.matches("\\d{2}-\\d{2}-\\-\\d{4}"))
+      if(!date.matches("\\d{2}-\\d{2}-\\d{4}"))
         throw new WrongStudentDate();
         (new Service()).addStudent(new Student(name, age, date));
     }
